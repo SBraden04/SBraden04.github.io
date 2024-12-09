@@ -81,11 +81,11 @@
         text-align: center;
     }
 
-    #hero a {
+   #hero a {
         text-decoration: none;
         color: white;
         background-color: #285D9D;
-        padding: 10px 15px;
+        padding: 1px 5px;
         border-radius: 5px;
         border: 2px solid #e8e8e8;
         font-weight: bold;
@@ -170,10 +170,13 @@
 
         #nav ul {
             flex-direction: column;
-            gap: 15px;
+            gap: 10px;
         }
 
-        #nav a {
+       #nav a {
             text-align: center;
+            font-size: 10px;
+            padding: 5px;
         }
+
     }
