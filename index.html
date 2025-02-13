@@ -3,81 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
-    <style>
-  
-    </style>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="Stylesheet.css">
+    <title>Document</title>
 </head>
 <body>
-    <link rel="stylesheet" href="Stylesheet.css">
+
     <div id="container">
-        <div id="header" class="clearfix">
-            <img src="https://placehold.co/70" alt="Logo">
-            <h1>Braden's Portfolio</h1>
-            <div id="nav">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Resume</a></li>
-                </ul>
+        <div class="child">
+            <h1>Will you be my Valentine?</h1>
+            <img src="Insam.webp">
+
+            <div class="buttons">
+                <button class="yes"onclick="yuhHuh()"> Yuh huh <3 </button>
+                <button class="no" onclick="nuhUh()"> Nuh uh >:( </button>
             </div>
-        </div>
-
-        <div id="hero">
-            <h1>Why I Joined This Course</h1>
-            <p>I've always been passionate about expressing my creativity and learning to code. After exploring various fields, I decided to dive into HTML and CSS to unlock new possibilities and build my skills. This course has been a great way to begin my journey into web development!</p>
-            <p>Interested in seeing my work or learning more about my journey? <a href="https://example.com" target="_blank" >Check out my portfolio</a> to see my projects and get in touch!</p>
-        </div>
-    
-        <div id="mainContainer">
-            <!-- Skills and Mission -->
-            <div id="groupOne" class="flex-item">
-                <div id="mission">
-                    <h2>Mission</h2>
-                    <p>- I strive to harness my creativity and passion for coding to make a positive impact in the tech world, building meaningful connections along the way.</p>
-                    <h2>Vision</h2>
-                    <p>- To continually learn and grow, mastering the art of web development and creating innovative digital solutions that empower and inspire.</p> 
-                </div>
-                <div id="skills">
-                    <h2>Skills</h2>
-                    <dl>
-                        <dt>1 - Strong Analytical and Problem-Solving Abilities</dt>
-                        <dd>I excel at breaking down complex problems into manageable solutions.</dd>
-
-                        <dt>2 - Effective Team Collaboration</dt>
-                        <dd>Proven ability to work well in group settings, ensuring goals are achieved efficiently.</dd>
-
-                        <dt>3 - Dedicated to Learning and Growth</dt>
-                        <dd>Actively expanding my knowledge in HTML and CSS as a beginner with a focus on web development fundamentals.</dd>
-
-                        <dt>4 - Attention to Detail</dt>
-                        <dd>Consistently ensure accuracy and quality in my work, especially when learning new coding techniques.</dd>
-
-                        <dt>5 - Adaptability and Open-Mindedness</dt>
-                        <dd>I embrace challenges and adapt quickly to new tools and technologies.</dd>
-
-                        <dt>6 - Time Management and Organizational Skills</dt>
-                        <dd>I effectively prioritize tasks to meet deadlines, even in fast-paced environments.</dd>
-                    </dl>
-                </div>
-            </div>
-
-            <!-- Resume and Image -->
-            <div id="groupTwo" class="flex-item">
-                <div id="bodyImage">
-                    <img src="https://placehold.co/300x200" alt="Placeholder Image">
-                </div>
-                <div id="resume">
-                    <h2>Resume</h2>
-                    <p>Dedicated and enthusiastic learner with a strong foundation in problem-solving, teamwork, and effective communication. As a beginner in HTML and CSS, I am passionate about expanding my skills in web development and building innovative digital solutions. For more details on my experience and accomplishments, please refer to the 'Resume' button at the top of this page.</p>
-                </div>
-            </div>
-        </div>
-
-        <div id="footer">
-            <p>If you need to reach me, please reference my '<b><u>About Me</u></b>' tab at the top.</p>
+            <p></p>
         </div>
     </div>
+    
+    <script>
+        function yuhHuh() {
+         let text = document.querySelector("p");
+         text.innerText="YIPPIE"
+        }
+    </script>
 </body>
 </html>
