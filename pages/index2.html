@@ -14,9 +14,9 @@
   <div id="app">
     <div id="searchBar">
       <h2 >Search any card here</h2>
-      <a href="/pages/index2.html">a</a>
       <input type="text" v-model="inputText">
       <button v-on:click="fetchApi">Search</button>
+      <a href="../index.html">Back to original</a>
       <p v-if="cardCount > 0"> {{cardCount}} Cards Found</p>
     </div>
     <div id="scroll">
