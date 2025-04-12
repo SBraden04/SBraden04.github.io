@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pokémon Card Search</title>
+  <script type="module" src="main2.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
+  <link rel="stylesheet" href="styles2.css">
+ 
+</head>
+<body>
+<div id="container">
+  <img class="overlay" src="images/dex.png">
+  <div id="app">
+    <div id="searchBar">
+      <h2 >Search any card here</h2>
+      <a href="/pages/index2.html">a</a>
+      <input type="text" v-model="inputText">
+      <button v-on:click="fetchApi">Search</button>
+      <p v-if="cardCount > 0"> {{cardCount}} Cards Found</p>
+    </div>
+    <div id="scroll">
+      <section class="template"v-for="list in dotData">
+        <h3>{{list.name}}</h3>
+        <h4>{{list.set.name}}</h4> 
+        <img :src="list.images.small">
+      </section>
+    </div>
+  </div>
+</div>
+  
+
+  
+</body>
+</html>

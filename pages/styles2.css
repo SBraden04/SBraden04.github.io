@@ -1,0 +1,72 @@
+div{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    background-image: url("images/pokedexBackground.png");
+    background-position: center;
+    overflow: scroll;
+    height: auto;
+    padding: 0;
+  }
+  .template {
+    padding: 10px;
+    border-radius: 0%;
+    background-color: cornflowerblue;
+    width: 650px;
+    z-index: -1;
+  }
+  input{
+    display: inline;
+  }
+  h3{
+    font-size: 25px;
+  }
+  h4{
+    font-size: 20px;
+  }
+  #container {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  #searchBar {
+    border: 3px solid black;
+    padding: 10px;
+    padding-top: 0px;
+    margin: 10px;
+    margin-left: 42%;
+    border-radius: 6%;
+    background-color: firebrick;
+    max-width: fit-content;
+    position: fixed;
+    top: 100px;
+    left: 540px;
+  }
+  #searchBar h2 {
+    margin: 10px;
+  }
+  p {
+    margin: 0px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  .overlay{
+    position: fixed;
+    top: 0;
+    left: 565px;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+  }
+  #app{
+    height: auto;
+  }
+  #scroll {
+    width: 700px;
+    height: 400px;
+    padding-top: 150px;
+    position: relative;
+    left: 600px;
+  }
