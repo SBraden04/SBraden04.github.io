@@ -4,7 +4,7 @@ div{
 }
 body{
     background-color: black;
-    background-image: url("images/pokedexBackground.png");
+    background-image: url("../images/pokedexBackground.png");
     background-position: center;
     overflow: scroll;
     height: auto;
