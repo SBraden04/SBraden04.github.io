@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="main.js" defer></script>
-    <link rel="stylesheet" href="Styles.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Pokémon Card Search</title>
+  <script type="module" src="main.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+ 
 </head>
 <body>
+  <div>
 
-    <div id="container">
-        <div class="child">
-            <h1>Will you be my Valentine?</h1>
-            <img src="Insam.webp">
-
-            <div class="buttons">
-                <button class="yes"onclick="yuhHuh()"> Yuh huh <3 </button>
-                <button class="no" onclick="nuhUh()"> Nuh uh >:( </button>
-            </div>
-            <p></p>
-        </div>
+  </div>
+<div id="container">
+  <div id="app">
+    <div id="searchBar">
+      <h2>Search any card here</h2>
+      <input type="text" v-model="inputText">
+      <button v-on:click="fetchApi">Search</button>
+      <p v-if="cardCount > 0"> {{cardCount}} Cards Found</p>
     </div>
-    
-    <script>
-        function yuhHuh() {
-         let text = document.querySelector("p");
-         text.innerText="YIPPIE"
-        }
-    </script>
+
+    <section v-for="list in dotData">
+      <h3>{{list.name}}</h3>
+      <h4>{{list.set.name}}</h4> 
+      <img :src="list.images.small">
+    </section>
+  
+  </div>
+</div>
+  
+
+  
 </body>
 </html>

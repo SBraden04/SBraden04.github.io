@@ -1,22 +1,27 @@
+import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js';
 
-
-function yuhHuh() {
-    let img = document.querySelector("img");
-    img.src = "yippee-iluvmybf.gif"
-    
-   
+createApp({
+    data() {
+        return {
+            dotData: [],
+            inputText: "",
+            cardCount: 0
+        }
+    },
+    methods: {
+        
+        async fetchApi(){
+            const url = `https://api.pokemontcg.io/v2/cards?q=name:${this.inputText}`
+            const res = await fetch(url);
+            const data = await res.json();
+            
+            this.dotData = data.data;
+           
+            this.cardCount = data.count;
+        }
+    },
+    mounted() {
+        this.fetchApi();
     }
-   function nuhUh() {
-    let img = document.querySelector("img");
-    img.src = "sideeye.jpeg"
-
-    button = document.querySelector(".no");
-    button.remove();
-
-    button2 = document.querySelector(".yes");
-    button2.innerText = "YUH HUH >:)"
-    button2.style.width = "170px"
-    button2.style.height = "50px"
-    button2.style.fontSize = "20px"
-    
-    }
+}).mount('#app')
+// You will write the Vue app code below

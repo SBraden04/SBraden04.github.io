@@ -1,61 +1,41 @@
 body{
-background: rgb(250,55,55);
-background: linear-gradient(90deg, rgba(250,55,55,1) 0%, rgba(255,151,225,1) 100%);
-}
-
-#container {
-height: 100vh;
-position: relative;
-}
-
-.child {
-    position: absolute;
-    background-color: #ff83db;
-    top: 20%;
-    left: 50%;
-    border: 2px solid pink;
-    border-radius: 10px;
-    width: 400px;
-    height: 340px;
-    margin-left: -200px;
-    padding: 25px;
-}
-
-.child h1 {
+    background-image: url("images/pokedexBackground.png");
+  }
+  section {
+    display: inline-block;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 6%;
+    background-color: firebrick;
+  }
+  input{
+    display: inline;
+  }
+  h3{
+    font-size: 25px;
+  }
+  h4{
+    font-size: 20px;
+  }
+  #container {
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.child img {
-    margin-left: 90px;
-    height: 200px;
-    width: 200px;
-    display: block;
-    margin-bottom: 20px;
-}
-
-.yes {
-    margin-left: 110px;
-    border-radius: 5px;
-    background-color: forestgreen;
-    height: 40px;
-    width: 90px;
-}
-.yes:hover{
-    background-color: pink;
-}
-.no:hover{
-    background-color: pink;
-}
-.no{
-    height: 40px;
-    
-    border-radius: 5px;
-    background-color: orangered;
-}
-p{
-    text-align: center;
-    
-}
-
-
+  }
+  #searchBar {
+    border: 3px solid black;
+    padding: 10px;
+    padding-top: 0px;
+    margin: 10px;
+    margin-left: 40%;
+    border-radius: 6%;
+    background-color: firebrick;
+    max-width: fit-content;
+  }
+  #searchBar h2 {
+    margin: 10px;
+  }
+  p {
+    margin: 0px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
